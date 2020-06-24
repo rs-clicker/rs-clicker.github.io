@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log("started")
+      console.log("started")
       this.http.get("https://rs-clicker.azurewebsites.net/").subscribe(result => {
         console.log(result)
       })
